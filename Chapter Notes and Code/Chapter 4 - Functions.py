@@ -29,6 +29,7 @@ def retX(x=2):
 #Scope
 
 #try-catch
+#exception handling
 a = input("A:")
 b = input("B:")
 a = int(a)
@@ -37,19 +38,9 @@ try:
     print(a / b)
 except ZeroDivisionError:
     print("b cannot be zero")
-    
-#Docstrings for functions
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+#Docstrings for functions
+"""
+functionality
+:params x: type
+"""
