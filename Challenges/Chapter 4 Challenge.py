@@ -5,8 +5,10 @@ def returnInputSquared(x):
     returns x^2
     :param x: int.
     """
-    return x**2
-
+    try:
+        return x**2
+    except ValueError:
+        print("Invalid variable passed in")
 #-2. Create a function that accepts a string as a parameter and prints it.
 def printString(s):
     """
@@ -22,8 +24,10 @@ def manyParaFunction(x,y,z, a = 1, b = 1):
     return the sum of x,y,z raised to a+b
     :param x,y,z,a,b: integer||float
     """
-    return x+y+z**(a+b)
-
+    try:
+        return x+y+z**(a+b)
+    except ValueError:
+        print("Invalid variable passed in")
 #-4. Write a program with two functions. The first should take an integer
 #    as a parameter and return it divided by two. The second function should
 #    take a parameter and return it multiplied by four. Save the result of the
@@ -34,16 +38,22 @@ def fOne(x):
     return x divided by 2
     :param x: int.
     """
-    return x/2
+    try:
+        return x/2
+    except (ZeroDivisionError, ValueError):
+        print("Invalid input for x")
 def fTwo(x):
     """
     return x multiplied by 4
     :param x: int
     """
-    return x*4
+    try:
+        return x*4
+    except(ValueError):
+        print("The input cannot be multiplied")
 
 pox = fOne(6)
-fTwo(pox)
+print(fTwo(pox))
 
 #-5. Write a function that converts a string to a float and returns it.
 def convertToFloat(s):
@@ -59,3 +69,7 @@ def convertToFloat(s):
 #-6. Add a docstring to all challenges.
 #-*
 #<-FUNCTION CALLS->
+print(returnInputSquared(2))
+printString("Test String")
+print(manyParaFunction(1,0,1))
+print(convertToFloat("1000"))
