@@ -36,7 +36,7 @@ a = int(a)
 b = int(b)
 try:
     print(a / b)
-except ZeroDivisionError:
+except (ZeroDivisionError, ValueError):
     print("b cannot be zero")
 
 #Docstrings for functions
