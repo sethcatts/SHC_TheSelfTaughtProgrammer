@@ -18,7 +18,7 @@ print("Index -1 of author: " + author[-1])
 #String multiplication
 print("mult str" * 3) #-> "mult strmult strmult str"
 
-#Upper and Lower build in METHODS
+#Upper and Lower built in METHODS
 
 #Formate Method
 "C.J {}".formate("Young") #-> "C.J Young"
@@ -26,4 +26,11 @@ print("mult str" * 3) #-> "mult strmult strmult str"
 "C.J {}, {} {} {}".formate("Young", "was", "pretty", "smart.")
 #-> "C.J Young was pretty smart"
 
-#Split
+#Split method
+spl = "Hello. Yes!".split(".")
+print(spl) #-> ["Hello", "Yes!"]
+
+#Join method
+jn = "abc"
+result = "+".join(first_three)
+print(result) #-> "a+b+c"
