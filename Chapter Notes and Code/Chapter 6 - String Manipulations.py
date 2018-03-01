@@ -20,10 +20,10 @@ print("mult str" * 3) #-> "mult strmult strmult str"
 
 #Upper and Lower built in METHODS
 
-#Formate Method
-"C.J {}".formate("Young") #-> "C.J Young"
+#Format Method
+"C.J {}".format("Young") #-> "C.J Young"
 
-"C.J {}, {} {} {}".formate("Young", "was", "pretty", "smart.")
+"C.J {}, {} {} {}".format("Young", "was", "pretty", "smart.")
 #-> "C.J Young was pretty smart"
 
 #Split method
@@ -47,8 +47,8 @@ print(equ)
 
 #Find Indexes
 print("Toaster".index("a")) #-> 3
-#You need to you use exception handling if you aren't 100% sure that the
-#thing you are looking for is there.
+#You need to you use exception handling if you aren't 100% sure
+#that the thing you are looking for is there.
 
 #in
 "Cat" in "Cat and dog" #-> True
