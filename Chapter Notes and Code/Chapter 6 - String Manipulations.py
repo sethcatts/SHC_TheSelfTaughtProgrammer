@@ -34,3 +34,32 @@ print(spl) #-> ["Hello", "Yes!"]
 jn = "abc"
 result = "+".join(first_three)
 print(result) #-> "a+b+c"
+
+#Strip leading and trailing spaces
+s = "         no spaces around me           "
+s = s.strip()
+print(s) #-> "no spaces around me"
+
+#replace method
+equ = "All goldfish go to heaven"
+equ = equ.replace("o", "()")
+print(equ)
+
+#Find Indexes
+print("Toaster".index("a")) #-> 3
+#You need to you use exception handling if you aren't 100% sure that the
+#thing you are looking for is there.
+
+#in
+"Cat" in "Cat and dog" #-> True
+
+#Escaping characters
+"Sally does \"work\""
+
+#newline
+"\n"
+
+#Slicing
+fict = ["one", "two", "three", "four", "five"]
+fict = [0:3] #-> [first three elements]
+#!There are some cool indexing tricks by leaving them blank
