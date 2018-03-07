@@ -23,10 +23,15 @@ def capital():
 #-4 Take the string "Where now? Who now? When now?" and call a method that
 #   returns a list ["Where now?", "Who now?", "When now?"]
 #   M:Split on '?'
+def challengeFour():
+    opStr = "Where now? Who now? When now?"
+    opStr = opStr.split("?")
+    print(opStr)
 
 #-5 Take the list ["The", "Fox", "Jumps", "Over", "The", "Fence", "."]
 #   and turn it into a grammatically correct string. Spaces except after .
 #   Method for this:?
+
 
 #-6 Replace every s with a dollar sign in the string "A screaming comes across
 #   the sky"
