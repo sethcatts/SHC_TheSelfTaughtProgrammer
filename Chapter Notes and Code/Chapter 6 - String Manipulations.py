@@ -61,5 +61,5 @@ print("Toaster".index("a")) #-> 3
 
 #Slicing
 fict = ["one", "two", "three", "four", "five"]
-fict = [0:3] #-> [first three elements]
+fict = fict[0:3] #-> [first three elements]
 #!There are some cool indexing tricks by leaving them blank
