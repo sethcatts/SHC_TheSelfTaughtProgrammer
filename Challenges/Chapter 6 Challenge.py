@@ -67,4 +67,4 @@ qte = qte[0:idx]
 #madLibs()
 #capital()
 #challengeFive()
-print(qte)
+#print(qte)
