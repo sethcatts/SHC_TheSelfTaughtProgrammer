@@ -32,4 +32,4 @@ import Chapter_8_Modules_2 as c8x
 print(c8x.fun())
 
 """There's other notes here about stopping loose code from running when it's
-imported, shouldn't be a a probem for me because I'm not slob"""
+imported, shouldn't be a a probem for me because I'm not slob... usually"""
