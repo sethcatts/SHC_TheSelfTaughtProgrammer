@@ -1,1 +1,1 @@
-This is a longer string, it's a pain in the ass to use python 2
+This is written to a file using python.

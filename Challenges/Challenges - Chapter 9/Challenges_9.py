@@ -7,7 +7,7 @@ def printFileContents(fileName):
 
 #-2 Get user input and write it to a file
 def writeInput():
-    contents = raw_input("Write to file: ")
+    contents = input("Write to file: ")
     with open("writeInput.txt", "w+") as file:
         file.write(contents)
 #-3 Take a multidimensional(3x3) list and write it to a csv file as inner list
@@ -23,7 +23,7 @@ def createListFile():
         w.writerow(the_list[2])
 
 #Function Calls
-#printFileContents("printableFile.txt")
-#writeInput()
-#printFileContents("writeInput.txt")
+printFileContents("printableFile.txt")
+writeInput()
+printFileContents("writeInput.txt")
 createListFile()
