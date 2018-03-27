@@ -2,10 +2,10 @@ import math
 
 wordList = ["Cat", "Dog", "Pet", "Net", "Ten", "Cap", "Man"]
 
-#This should return a multDem list 
+#This should return a multDem list
 #filled out to the length of [word]
 def newWord():
-    return wordList(math.Random(0, len(wordList)))
+    return wordList(math.randInt(0, len(wordList)))
 def returnWordLists(word):
     length = len(word)
     retLists = [[],[]]
@@ -26,9 +26,12 @@ def guessTheWord():
              ["          "]]
     incorrectGuesses = 0
     guessed = False;
-    while !guessed:
+    while not guessed:
         guess = input("Letter: ")
         if(word.contains("guess")):
             #Add to letters guessed
+            print("filler.")
         else:
-            incorrectGuesses++
+            incorrectGuesses = incorrectGuesses+1
+#Start Game
+guessTheWord()
