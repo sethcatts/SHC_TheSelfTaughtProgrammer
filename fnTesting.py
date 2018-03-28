@@ -1,11 +1,11 @@
-import math
+import random
 
 wordList = ["Cat", "Dog", "Pet", "Net", "Ten", "Cap", "Man"]
 
 #This should return a multDem list
 #filled out to the length of [word]
 def newWord():
-    return wordList(math.randInt(0, len(wordList)))
+    return wordList(random.randInt(0, len(wordList)))
 def returnWordLists(word):
     length = len(word)
     retLists = [[],[]]
