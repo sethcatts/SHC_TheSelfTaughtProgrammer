@@ -1,7 +1,8 @@
 #--TO_DO--
 #-Combine return word list and new word to one function?
 #-Cut down variables in general
-#-
+#-Complete main if statement logic
+#-REFACTOR, REFACTOR, REFACTOR
 import random
 wordList = ["Cat", "Dog", "Pet", "Net", "Ten", "Cap", "Man"]
 
