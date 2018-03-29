@@ -1,18 +1,23 @@
+#--TO_DO--
+#-Combine return word list and new word to one function?
+#-Cut down variables in general
+#-
 import random
-
 wordList = ["Cat", "Dog", "Pet", "Net", "Ten", "Cap", "Man"]
+
+#Return a word from wordList
+def newWord():
+    return wordList[random.randint(0, 6)]
 
 #This should return a multDem list
 #filled out to the length of [word]
-def newWord():
-    return wordList(random.randInt(0, len(wordList)))
 def returnWordLists(word):
     length = len(word)
     retLists = [[],[]]
-    for idx in 2:
-        for i in length:
-            retLists[idx][i].append(0)
-
+    for idx in range(0,2):
+        for i in range(0, len(word)):
+            retLists[idx].append("_")
+    return retLists
 #Hangman main
 def guessTheWord():
     word = newWord()
@@ -26,10 +31,15 @@ def guessTheWord():
              ["          "]]
     incorrectGuesses = 0
     guessed = False;
+    guess   = "string"
+    #Debug outside loop
+    print("Word: " + word)
+    print("Lists: " + str(wordLists))
+    #---
+
     while not guessed:
-        guess = input("Letter: ")
-        if(word.contains("guess")):
-            #Add to letters guessed
+        guess = raw_input("Letter: ")
+        if(guess in word):
             print("filler.")
         else:
             incorrectGuesses = incorrectGuesses+1
