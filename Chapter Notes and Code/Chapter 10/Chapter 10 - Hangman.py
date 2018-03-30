@@ -31,5 +31,7 @@ def hangman(word):
             print(" ".join(board))
             win = True
             break
-
-hangman("Cat")
+    if not win:
+        print("\n".join(stages))
+        print("You lose! The word was {}.".format(word))
+hangman("Power")
