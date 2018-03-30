@@ -1,4 +1,6 @@
 #Modify this base code so that it uses a randomly generated word from a list
+import generateWordModule as wordModule
+
 def hangman(word):
     wrong  = 0
     stages = ["",
@@ -34,4 +36,4 @@ def hangman(word):
     if not win:
         print("\n".join(stages))
         print("You lose! The word was {}.".format(word))
-hangman("Power")
+hangman(wordModule.returnWord())
