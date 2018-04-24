@@ -5,5 +5,12 @@ class Circle():
     def __init__(self, r, c):
         self.radius = r
         self.circumference = c
-    def area();
-        return math.pow((self.radius * self.circumference), 2)
+    def diameter(self):
+        return (2 * self.radius)
+    def area(self):
+        return math.pow((self.radius * math.pi()), 2)
+
+
+circ = Circle(2, 4)
+print(circ.diameter())
+print(circ.area())
