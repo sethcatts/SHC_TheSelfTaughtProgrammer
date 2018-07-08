@@ -1,7 +1,5 @@
-import math
-import random
+def fizzBuzz(n):
+    for i in n:
+        print('test');
 
-def test(a):
-    print(a)
-    print(a+2)
-    return(a)
+fizzBuzz(100);
