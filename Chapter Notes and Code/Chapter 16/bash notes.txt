@@ -1,0 +1,18 @@
+BASH COMMANDS:
+-------------
+"pwd"           | print working directory
+"cd"            | change directory
+"ls"            | list directory
+"mkdir"         | create a directory
+"rmdir"         | remove a directory
+"touch"         | create file
+"export x=100"  | creates a sesson variable that lasts until the window is closed
+"whoami"        | print the name of the current user
+
+
+
+flags for commands => - or --
+"-a"            | show all files (hidden files)
+ sudo           | super user do, overrides safety features
+pass the return of a command as an argument to a new command with pipe ("|")
+

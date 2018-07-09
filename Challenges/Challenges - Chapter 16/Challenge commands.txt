@@ -1,0 +1,9 @@
+1.) Print "selftaught"
+        $echo selftaught
+
+2.) Navigate to a directory using absolute and relative pathing
+cd /d/Programming & Computer Science/The Self-Taught Programmer/Chapter Notes and Code/Chapter 16
+cd Chapter Notes and Code/Chapter 16
+
+3.) Create a shortcut variable for easy navigation to your project directory
+export tstpdir="/d/Programming & Computer Science/The Self-Taught Programmer/Chapter Notes and Code/Chapter 16"
