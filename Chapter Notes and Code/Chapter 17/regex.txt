@@ -1,0 +1,16 @@
+grep <word> <file> | returns the line containg the search term
+
+FLAGS:
+-i                 | ignore case
+-o                 | only return the instances of the searched term
+
+REGEX:
+^                  | Only matches if the pattern is at the beginning of a line.
+$                  | Lines that end with the pattern
+[<chars>]          | Check for all the chars inside
+[[:digit:]]        | Check for digits
+"\d"               | Check for digits
+*                  | The preceeding item can repeat and still match 
+.                  | Matches all characters
+\\                 | Escape the character
+^

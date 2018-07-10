@@ -1,0 +1,14 @@
+1.) Write a regular expression to match "Dutch" 
+    $grep Dutch xen.txt
+2.) Come up with a regular expression that matches all 
+    the digits in the string "Arizona 479, 501, 870. California 209, 213, 650"
+    $grep [[:digit:]] statecodes.txt
+3.) Create a regex that matches any ward tha starts with any character and
+    is followed by two o's. Then use pythons re module to match boo and 
+    loo in the sentence "The ghost that says boo haunts the loo"
+    <code>
+        import re
+        line = "The ghost that says boo haunts the loo"
+        m = re.findall(".oo", line, re.IGNORECASE)
+        print(m)
+    </code>
