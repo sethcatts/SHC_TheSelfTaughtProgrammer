@@ -6,8 +6,8 @@ favoriteMusic = ["Grimes", "Purity Ring", "CHVRCHES", "Anamanaguchi",
 #print(favoriteMusic)
 
 #-2. Create a list of tuples that are the geo-coordinates of somewhere
-geo_tuple = ("41.7325° N, 49.9469° W", "60°54’59″N, 101°57’0″E",
-             "32°46’44.57″N,  96°48’31.17″W")
+geo_tuple = ("41.7325° N, 49.9469° W", "60°54’59″N", "101°57’0″E",
+             "32°46’44.57″N",  "96°48’31.17″W")
 
 #-3. Create a dictionary with facts about yourself
 my_facts = {"Favorite COLOR":"Pink",

@@ -67,7 +67,7 @@ def convertToFloat(s):
         print("The input does not convert to a floating point value.")
 
 #-6. Add a docstring to all challenges.
-#-*
+#--*
 #<-FUNCTION CALLS->
 print(returnInputSquared(2))
 printString("Test String")
