@@ -1,16 +1,8 @@
 #Hello world
 print("Hello, world")
 #------------------------------------------------------------------------------#
-#Print "Hello, world" 100 times
-for i in range(100):
-    print("Hello, world!")
-
-#Line properties of python
+#LINE PROPERTIES
 print("""This is a really really
-really "really long line of code.""")
-
-print\
-("""This is a really really
 really "really long line of code.""")
 
 #SPACING
@@ -19,21 +11,14 @@ really "really long line of code.""")
 
 #DATA TYPES
 #When creating variables you don't have to specify a data type...
-#int
-ten = 10
-#string
+int = 10
 wrd = "word"
-#floating point
 flt = 1.1
-#boolean
-test = False
-#Null value
-nul = None
+bool = False
+null = None
 
-#It is easy to change the value of a variable
-print(ten)
-ten = 100
-print(ten)
+#Assign variable value with equals operator
+int = 100
 
 #MATH OPERATORS
 print(2+2)   #Add
@@ -69,9 +54,9 @@ elif: home = "India"
 else:
     print("Hello, World!")
 #------------------------------------------------------------------------------#
-#Python Functions
-#Syntax
+#PYTHON FUNCTIONS
 
+#Syntax
 #def [function name]([parameters]):
 #    [function definition]
 
@@ -82,7 +67,6 @@ def funct(x,y,z):
 #Assign a variable to a function return
 result = funct(1,2,3)
 print(result)
-
 
 #Built in functions
 len("stringlength")
@@ -95,8 +79,6 @@ age = input("Input your age:")
 #Required and optional parameters
 def retX(x=2):
     return x
-
-#Scope
 
 #try-catch
 #exception handling
@@ -115,7 +97,7 @@ functionality
 :params x: type
 """
 #------------------------------------------------------------------------------#
-#- Containers & Methods -#
+#- CONTAINERS & METHODS -#
 
 #---PYTHON METHODS
 #Change a string to uppercase using a python Method
@@ -177,6 +159,8 @@ dict3["Pear"] = "Brown"
 #delete a pair
 del dict3["Pear"]
 #------------------------------------------------------------------------------#
+# - STRINGS & STRING MINIPULATION - #
+
 #Triple Strings
 #if a string spans more than one line you have to put it in triple quotes
 """ Line one
@@ -279,16 +263,13 @@ def breakALoop():
         if i > 50:
             break
 
-
 #Prints all values but 3
 def continueLoop():
     for i in range(1,6):
         if i == 3:
             continue
         print(i)
-
-#You can nest loops
-#Python loops are like other lang loops but harder to read...
+#------------------------------------------------------------------------------#
 
 # - MODULES
 #importing modules
@@ -302,29 +283,23 @@ import math as m
 m.pow(2, 3)
 
 #Statistics
-#this is bad form, imports should all be at the top of the doc
-#but im putting the import here for easier reference.
-#import statistics
+#importing here for easier reference.
+import statistics
 nums = [1,2,3,4,5,6]
-#mean
-#statistics.mean(nums)
-#median
-#statistics.median(nums)
-#mode
-#statistics.mode(nums)
+statistics.mean(nums)
+statistics.median(nums)
+statistics.mode(nums)
 
 #keyword module
 import keyword
 keyword.iskeyword("for") #-> True
 keyword.iskeyword("parish") #-> False
 
-#importing written code(AAAAAAAAAaaaaaaand I have to change my file naming
-#convention...)
+#importing written code
+#importing may sometimes run code from module automaticaly
 import Chapter_8_Modules_2 as c8x
 print(c8x.fun())
 
-"""There's other notes here about stopping loose code from running when it's
-imported, shouldn't be a a probem for me because I'm not slob... usually"""
 #------------------------------------------------------------------------------#
 #FILE ACCESS AND WRITING
 import os
@@ -410,35 +385,6 @@ def hangman(word):
         print("You lose! The word was {}.".format(word))
 hangman("Power")
 #------------------------------------------------------------------------------#
-#Two variable calculator
-# TODO: usage loop for main function
-# TODO: adding, subtracting, dividing, multiplying
-# TODO: set variable operators function
-
-def calc():
-    usageLoop()
-    print("Calculator closed.")
-
-def usageLoop():
-    vars = setVariables()
-    #ask and operate
-    print("1 - Adding, 2 - Subtracting, 3 - Dividing, 4 - Multiplying")
-    oper = input("Operation: ")
-    if(oper == 1):
-        print(add(vars))
-    elif(oper == 2):
-        print(sub(vars))
-    elif(oper == 3):
-        print(div(vars))
-    elif(oper == 4):
-        print(mul(vars))
-
-
-def setVariables():
-    x = input("Set A: ")
-    y = input("Set B: ")
-    return [x,y]
-#------------------------------------------------------------------------------#
 #Object Oriented Programming
 """
 class [name]:
@@ -459,11 +405,11 @@ class Orange:
         self.mold = days * temp
 
 #Instances
-#or1 = Orange(10, "Dark Orange")
-#print(or1.weight)
-#print(or1.color)
-#or1.rot(5, 85)
-#print(or1.mold)
+or1 = Orange(10, "Dark Orange")
+print(or1.weight)
+print(or1.color)
+or1.rot(5, 85)
+print(or1.mold)
 
 
 #Rectangle Object
@@ -533,6 +479,7 @@ class Scraper:
                     print("\n" + url)
                     f.write(url + "\n")
 #------------------------------------------------------------------------------#
+# - A queue and stack class
 class Queue():
     def __init__(self):
         self.items = []
