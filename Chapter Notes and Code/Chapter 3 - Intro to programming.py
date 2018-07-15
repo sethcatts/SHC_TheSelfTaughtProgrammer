@@ -1,13 +1,13 @@
 #Print "Hello, world" 100 times
 for i in range(100):
     print("Hello, world!")
-    
+
 #Line properties of python
-print("""This is a really really 
+print("""This is a really really
 really "really long line of code.""")
 
 print\
-("""This is a really really 
+("""This is a really really
 really "really long line of code.""")
 
 #SPACING
@@ -50,9 +50,9 @@ print(6 == 9)      #Equal
 print(3 != 2)      #Not equal
 
 #LOGICAL OPERATORS
-#and
-#or
-#not
+and
+or
+not
 
 #CONDITIONAL STATEMENTS(if, elif, and else)
 #Example
@@ -65,19 +65,3 @@ elif: home = "India"
     print("Hello, India")
 else:
     print("Hello, World!")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
